@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+}
+
+h2 {
+    /* display: inline-block; */
+}
+
+form {
+    text-align: center;
+}
+
+input[type=color] {
+    margin-top: 10px;
+    width: 30px;
+    height: 19px;
+}
