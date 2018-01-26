@@ -19,3 +19,15 @@ input[type=color] {
     width: 30px;
     height: 19px;
 }
+
+table {
+    border-collapse: collapse;
+      
+}
+
+td {
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    
+}
