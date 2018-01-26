@@ -13,7 +13,7 @@ function makeGrid() {
     }
     //append the row to the table
     cell += "</tr>";
-    $(table).append(cell);
+    table.append(cell);
   }
   table.css("color", "red");
 
