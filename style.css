@@ -1,33 +1,31 @@
 body {
-    text-align: center;
+  text-align: center;
 }
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
+  font-family: Monoton;
+  font-size: 70px;
 }
 
 h2 {
-    /* display: inline-block; */
+  /* display: inline-block; */
 }
 
 form {
-    text-align: center;
+  text-align: center;
 }
 
-input[type=color] {
-    margin-top: 10px;
-    width: 30px;
-    height: 19px;
+input[type="color"] {
+  margin-top: 10px;
+  width: 30px;
+  height: 19px;
 }
 
 table {
-    border-collapse: collapse;
-      
+  border-collapse: collapse;
 }
 
 td {
-    width: 10px;
-    height: 10px;
-    border: 1px solid;
-    
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
 }
