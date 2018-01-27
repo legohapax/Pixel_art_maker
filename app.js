@@ -1,5 +1,6 @@
 function makeGrid() {
-  let table = $("<table></table>");
+  //let table = $('<table id="table"></table>');
+  let table = $( "#table" );
   let size = $("#size_pick");
   let lines = $("#height").val();
   let cells = $("#width").val();
@@ -15,9 +16,16 @@ function makeGrid() {
     cell += "</tr>";
     table.append(cell);
   }
-  //table.css("color", "red");
 
   $("body").append(table);
 }
 
-$("#create").click(makeGrid);
+$( "#create" ).click(makeGrid);
+
+
+
+
+$( 'table' ).on( 'click', 'td', function() {
+  let color = $( "#color_pick" ).val();
+  $( this ).css("background-color",color)
+});
