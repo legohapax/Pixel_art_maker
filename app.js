@@ -4,7 +4,7 @@ function isInDocument(query) {
 
 function makeGrid() {
   if (isInDocument("td")) {
-      $( "td" ).css("background-color","white")
+    $("td").css("background-color", "white");
   } else {
     let table = $("#table");
     let size = $("#size_pick");
@@ -23,7 +23,6 @@ function makeGrid() {
       table.append(cell);
     }
   }
-  //$("body").append(table);
 }
 
 $("#create").click(makeGrid);
@@ -32,9 +31,3 @@ $("table").on("click", "td", function() {
   let color = $("#color_pick").val();
   $(this).css("background-color", color);
 });
-
-// alert($.contains( "header", "h1"))
-
-// if (document.getElementByTagName('header')) {
-//   alert("prdel")
-//  }
