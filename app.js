@@ -2,9 +2,8 @@ function makeGrid() {
   var table = $("<table></table>");
   var row = $("<tr></tr>");
   var cell = $("<td></td>");
-  var n = $("<td>dd</td>");
-  var lines = 10;
-  var cells = 10;
+  const lines = $("#width").val();
+  const cells = $("#height").val();
 
   for (var i = 0; i < lines; i++) {
     var cell = "<tr>";
@@ -20,4 +19,4 @@ function makeGrid() {
   $("body").append(table);
 }
 
-$("#create").click(makeGrid);
+$("#create").mousedown(makeGrid);
