@@ -1,5 +1,7 @@
 let row_check;
 let cells_check;
+const lines_input = $("#height");
+const cells_input = $("#width");
 
 //function to determine whether the table has already been created or not
 function isInDocument(query) {
@@ -17,8 +19,8 @@ function makeGrid() {
 
     //basic variables
     let table = $("#table");
-    let lines = $("#height").val();
-    let cells = $("#width").val();
+    let lines = lines_input.val();
+    let cells = cells_input.val();
 
     row_check = lines;
     cells_check = cells;
