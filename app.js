@@ -1,3 +1,6 @@
+let row_check;
+let cells_check;
+
 //function to determine whether the table has already been created or not
 function isInDocument(query) {
   return document.querySelectorAll(query).length != 0;
@@ -5,15 +8,20 @@ function isInDocument(query) {
 
 //function to create the table
 function makeGrid() {
-  if (isInDocument("td")) {
+  if (isInDocument("td") && row_check == $("#height").val() && cells_check == $("#width").val()) {
     //the table has already been created so make all fields white
     $("td").css("background-color", "white");
   } else {
     //table hasn't been created so create the table
+    $( "tr" ).remove()
+
     //basic variables
     let table = $("#table");
     let lines = $("#height").val();
     let cells = $("#width").val();
+
+    row_check = lines;
+    cells_check = cells;
     //to prevent losing the values from input fields
     let size = $("#size_pick");
     size.on("submit", function(e) {
